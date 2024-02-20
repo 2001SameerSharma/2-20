@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Book</title>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <div>
+        <p><strong>Name:</strong> <span th:text="${book.name}">Book Name</span></p>
+        <p><strong>PDF URL:</strong> <a th:href="${book.pdfUrl}" th:text="${book.pdfUrl}">PDF Link</a></p>
+    </div>
+</body>
+</html>
